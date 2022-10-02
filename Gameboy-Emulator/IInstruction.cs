@@ -8,6 +8,6 @@ namespace Gameboy_Emulator
 {
     internal interface IInstruction
     {
-        void execute(int SP);
+        void execute(Registers r);
     }
 }
