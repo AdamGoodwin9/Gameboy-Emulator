@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gameboy_Emulator
 {
-    internal interface IInstruction
+    internal class Utils
     {
-        public string Name { get; }
-        public string Shorthand { get; }
-        void execute(Registers r);
     }
 }

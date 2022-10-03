@@ -6,6 +6,41 @@ using System.Threading.Tasks;
 
 namespace Gameboy_Emulator
 {
+    public enum RegisterPairDD
+    {
+        BC = 00,
+        DE = 01,
+        HL = 10,
+        SP = 11
+    }
+
+    public enum RegisterPairSS
+    {
+        BC = 00,
+        DE = 01,
+        HL = 10,
+        SP = 11
+    }
+
+    public enum RegisterPairQQ
+    {
+        BC = 00,
+        DE = 01,
+        HL = 10,
+        AF = 11
+    }
+
+    public enum Register
+    {
+        A = 0b111,
+        B = 0b000,
+        C = 0b001,
+        D = 0b010,
+        E = 0b011,
+        H = 0b100,
+        L = 0b101
+    }
+
     internal class Registers
     {
         private byte _A;
@@ -138,10 +173,6 @@ namespace Gameboy_Emulator
         {
             get => getFlag(4);
             set => setFlag(4, value);
-        }
-
-        public Registers()
-        {
         }
     }
 }
